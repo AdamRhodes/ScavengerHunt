@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ScavengerHunt</string>
+    <string name="title_activity_explore">Explore</string>
 </resources>
