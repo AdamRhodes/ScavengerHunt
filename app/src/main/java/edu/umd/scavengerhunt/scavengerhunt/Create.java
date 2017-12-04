@@ -25,7 +25,7 @@ public class Create extends AppCompatActivity {
 
 
 
-
+    //Navbar
     public void gotoExplore(View view)
     {
 
