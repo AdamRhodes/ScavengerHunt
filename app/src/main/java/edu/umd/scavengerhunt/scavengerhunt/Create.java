@@ -8,11 +8,7 @@ import android.view.View;
 
 public class Create extends AppCompatActivity implements Nav_Bar_frag.OnFragmentInteractionListener{
 
-    @Override
-    public void onFragmentInteraction(Uri uri)
-    {
-        //TO DO
-    }
+
 
 
     @Override
@@ -27,6 +23,16 @@ public class Create extends AppCompatActivity implements Nav_Bar_frag.OnFragment
         Intent intent = new Intent(this, Create_Title.class);
         startActivity(intent);
 
+    }
+
+
+
+
+
+    @Override
+    public void onFragmentInteraction(Uri uri)
+    {
+        //TO DO
     }
 
 
