@@ -28,6 +28,8 @@ public class Game {
         this.hunt = hunt;
         this.startTimestamp = System.currentTimeMillis();
         this.timestamps = new ArrayList<>();
+        this.timestamps.add(this.startTimestamp);
+        this.nextIdx = 1;
     }
 
     /**
