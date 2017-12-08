@@ -32,6 +32,14 @@ public abstract class ScavengerHunt {
     /* list of target destinations throughout the hunt */
     List<Destination> destinations;
 
+    /**
+     * ScavengerHunt constructor.
+     * @param title
+     * @param description
+     * @param coverImg
+     * @param id
+     * @param creatorId
+     */
     public ScavengerHunt(String title, String description, File coverImg, int id, int creatorId) {
         this.title = title;
         this.description = description;
@@ -43,20 +51,38 @@ public abstract class ScavengerHunt {
         this.destinations = new ArrayList<>();
     }
 
+    /**
+     * Adds given destination to list of destinations.
+     * @param dest
+     */
     public void addDestination(Destination dest) {
         // TODO
     }
 
+    /**
+     * Returns the current rating for the scavenger hunt.
+     * @return
+     */
     public double getRating() {
         // TODO
         return 0;
     }
 
+    /**
+     * Returns the distance from the given coordinate to the start location of the scavenger hunt.
+     * @param coordinate
+     * @return
+     */
     public double getDistanceToStart(GeoPoint coordinate) {
         // TODO
         return 0;
     }
 
+    /**
+     * Returns the total distance of the scavenger hunt (the length of the path between every
+     * destination).
+     * @return
+     */
     public double getTotalDistance() {
         // TODO
         return 0;
