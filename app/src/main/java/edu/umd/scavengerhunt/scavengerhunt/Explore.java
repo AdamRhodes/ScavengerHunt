@@ -1,11 +1,15 @@
 package edu.umd.scavengerhunt.scavengerhunt;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Explore extends AppCompatActivity {
+public class Explore extends AppCompatActivity implements Nav_Bar_frag.OnFragmentInteractionListener{
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,37 +17,13 @@ public class Explore extends AppCompatActivity {
         setContentView(R.layout.activity_explore);
     }
 
-    public void gotoExplore(View view)
+
+
+
+    @Override
+    public void onFragmentInteraction(Uri uri)
     {
-
-        Intent intent = new Intent(this, Explore.class);
-        startActivity(intent);
-
+        //TO DO
     }
-
-    public void gotoCreate(View view)
-    {
-
-        Intent intent = new Intent(this, Create.class);
-        startActivity(intent);
-
-    }
-
-    public void gotoProfile(View view)
-    {
-
-        Intent intent = new Intent(this, Profile.class);
-        startActivity(intent);
-
-    }
-
-    public void gotoSearch(View view)
-    {
-
-        Intent intent = new Intent(this, Search.class);
-        startActivity(intent);
-
-    }
-
 
 }
