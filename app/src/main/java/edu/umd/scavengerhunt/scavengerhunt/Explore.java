@@ -15,6 +15,11 @@ public class Explore extends AppCompatActivity implements Nav_Bar_frag.OnFragmen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explore);
+
+//        MainApplication mainApp = (MainApplication)getApplicationContext();
+//        String firstDest = mainApp.destinationsByName.firstKey();
+//
+//        System.out.println(firstDest);
     }
 
 

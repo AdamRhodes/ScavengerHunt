@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Class to store data and information about a particular user.
  */
-public abstract class UserProfile {
+public class UserProfile {
 
     /* name of user */
     String username;

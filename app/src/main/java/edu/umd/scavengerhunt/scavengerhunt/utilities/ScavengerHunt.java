@@ -8,7 +8,7 @@ import java.util.*;
 /**
  * Class to store data and information about a particular scavenger hunt game.
  */
-public abstract class ScavengerHunt {
+public class ScavengerHunt {
 
     /* name of the hunt */
     String title;
@@ -42,15 +42,15 @@ public abstract class ScavengerHunt {
      * @param id
      * @param creatorId
      */
-    public ScavengerHunt(String title, String description, File coverImg, int id, int creatorId) {
+    public ScavengerHunt(String title, String description, String coverImg, int id, int creatorId, List<Destination> destinations) {
         this.title = title;
         this.description = description;
-        this.coverImg = coverImg;
+        this.coverImg = new File(coverImg);
         this.id = id;
         this.starRating = 5;
         this.numRatings = 0;
         this.creatorId = creatorId;
-        this.destinations = new ArrayList<>();
+        this.destinations = (destinations == null) ? new ArrayList<Destination>() : destinations;
     }
 
     /**
@@ -75,7 +75,7 @@ public abstract class ScavengerHunt {
      * @param coordinate
      * @return
      */
-    public double getDistanceToStart(GeoPoint coordinate) {
+    public double getDistanceToStart(String coord) {//GeoPoint coordinate) {
         // TODO
         return 0;
     }

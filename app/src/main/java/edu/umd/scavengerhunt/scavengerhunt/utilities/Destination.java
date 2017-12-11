@@ -3,10 +3,10 @@ package edu.umd.scavengerhunt.scavengerhunt.utilities;
 /**
  * Class to store data and information about a particular scavenger hunt destination.
  */
-public abstract class Destination {
+public class Destination {
 
     /* google maps coordinate of target destination */
-    GeoPoint location;
+//    GeoPoint location;
 
     /* title of destination */
     String title;
@@ -25,8 +25,8 @@ public abstract class Destination {
      * @param clue
      * @param id
      */
-    public Destination(double latitude, double longitude, String title, String clue, int id) {
-        this.location = new GeoPoint(latitude, longitude);
+    public Destination(String title, String clue, int id, double latitude, double longitude) {
+//        this.location = new GeoPoint(latitude, longitude);
         this.title = title;
         this.clue = clue;
         this.id = id;
@@ -37,8 +37,8 @@ public abstract class Destination {
      * @param coordinate
      * @return
      */
-    public double getDistance(GeoPoint coordinate) {
-        //TODO
-        return 0;
-    }
+//    public double getDistance(GeoPoint coordinate) {
+//        //TODO
+//        return 0;
+//    }
 }
