@@ -1,5 +1,8 @@
 package edu.umd.scavengerhunt.scavengerhunt;
 
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
 import java.util.*;
 import edu.umd.scavengerhunt.scavengerhunt.utilities.ScavengerHunt;
 

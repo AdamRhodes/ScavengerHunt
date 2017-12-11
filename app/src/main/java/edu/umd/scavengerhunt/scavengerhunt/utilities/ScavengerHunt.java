@@ -2,6 +2,8 @@ package edu.umd.scavengerhunt.scavengerhunt.utilities;
 
 import java.io.File;
 import java.util.*;
+//import com.google.android.gms.location
+
 
 /**
  * Class to store data and information about a particular scavenger hunt game.
