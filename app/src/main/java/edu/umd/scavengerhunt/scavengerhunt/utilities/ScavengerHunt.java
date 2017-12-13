@@ -11,41 +11,41 @@ import java.util.*;
 public class ScavengerHunt {
 
     /* name of the hunt */
-    String title;
+    public String title;
 
     /* description of the hunt */
-    String description;
+    public String description;
 
     /* file path to cover image */
-    File coverImg;
+    public int imgId;
 
     /* unique id of the hunt */
-    int id;
+    public int id;
 
     /* rating out of 5 */
-    double starRating;
+    public double starRating;
 
     /* number of total ratings */
-    int numRatings;
+    public int numRatings;
 
     /* id of the hunt creator */
-    int creatorId;
+    public int creatorId;
 
     /* list of target destinations throughout the hunt */
-    List<Destination> destinations;
+    public List<Destination> destinations;
 
     /**
      * ScavengerHunt constructor.
      * @param title
      * @param description
-     * @param coverImg
+     * @param imgId
      * @param id
      * @param creatorId
      */
-    public ScavengerHunt(String title, String description, String coverImg, int id, int creatorId, List<Destination> destinations) {
+    public ScavengerHunt(String title, String description, int imgId, int id, int creatorId, List<Destination> destinations) {
         this.title = title;
         this.description = description;
-        this.coverImg = new File(coverImg);
+        this.imgId = imgId; //new File(coverImg);
         this.id = id;
         this.starRating = 5;
         this.numRatings = 0;
